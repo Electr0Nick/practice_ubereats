@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+.wrap {
+    max-width: 982px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.button_top {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    right: 16px;
+    bottom: 24px;
+    border-radius: 2px;
+    transition: 200ms;
+    background-color: #59bd5a;
+}
+.button_top:hover {
+    transform: scale(1.05);
+}
+.button_top a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 96px;
+    text-align: center;
+}
+
+
+
+
+/* --------------------------- HEADER --------------------------- */
+header {
+    box-shadow: 10px 0 10px #d3d3d3;
+}
+header .wrap {
+    display: flex;
+    justify-content: space-between;
+}
+header .logo {
+    margin: 29px 0;
+    align-self: center;
+}
+header .enter {
+    display: flex;
+    line-height: 0;
+}
+header .enter button {
+    align-self: center;
+    width: 78px;
+    height: 40px;
+    margin-right: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    transition: 200ms;
+    background-color: white;
+    font-weight: 600;
+}
+header .enter button:hover {
+    background-color: #f0f0f0;
+}
+header .enter a {
+    align-self: center;
+    padding: 25px 10px;
+    transition: 200ms;
+}
+header .enter a:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* --------------------------- MAIN --------------------------- */
+main {
+    padding: 50px 0 80px;
+}
+main .search {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1rem;
+    color: #626262;
+}
+main .search::placeholder {
+    color: #e0e0e0;
+}
+main .search:focus {
+    outline: 0;
+}
+main h1 {
+    margin: 50px 0 16px;
+    font-size: 1.375rem;
+    font-weight: normal;
+}
+main .cards {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 2%;
+    row-gap: 16px;
+}
+main .card {
+    flex: 0 1 32%;
+    transition: 200ms;
+}
+main .card img {
+    width: 100%;
+}
+main .card:hover {
+    transform: scale(1.02);
+    background-color: #f0f0f0;
+}
+main .card a {
+    text-decoration: none;
+}
+main .card h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000;
+}
+main .card .menu {
+    font-size: 0.875rem;
+    color: #626262;
+}
+main .card .time {
+    margin-bottom: 20px;
+    font-size: 0.8125rem;
+    color: #000;
+}
+
+
+
+
+/* --------------------------- FOOTER --------------------------- */
+footer {
+    background-color: #262626;
+}
+footer .white_logo {
+    margin: 56px 0 40px;
+}
+footer hr {
+    border-color: #979797;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+footer .column1, footer .column2, footer .column3 {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 32%;
+}
+footer .info {
+    padding: 32px 0 48px;
+}
+footer .info, footer .docs {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2%;
+}
+footer .info .change_lang {
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+}
+footer .info select {
+    width: 100%;
+    max-width: 227px;
+    height: 40px;
+    margin-left: -30px;
+    padding-left: 44px;
+    border: none;
+    background-color: #3b3b3b;
+    font-size: 0.8125rem;
+    color: #fff;
+}
+footer .info .change_lang > img {
+    padding-left: 14px;
+    z-index: 1;
+}
+footer .info select:focus {
+    outline: none;
+}
+footer .info .column1 > a {
+    margin-bottom: 17px;
+} 
+footer .info .column1 > a::before {
+    content: "#";
+    color: #49a144;
+}
+footer .info .social a {
+    margin-right: 6px;
+}
+footer .info .column2, footer .info .column3 {
+    row-gap: 23px;
+    font-size: 0.8125rem;
+}
+footer .apps {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    padding: 40px 0;
+}
+footer .docs {
+    padding: 40px 0;
+    font-size: 0.6875rem;
+}
+footer .touch {
+    transition: 200ms;
+}
+footer .touch:hover {
+    transform: scale(1.02);
+}
+
+
+
+/* --------------------------- MEDIA --------------------------- */
+@media (max-width:770px) {
+    main .card {
+        flex: 0 1 49%;
+    }
+    footer .info select {
+        max-width: 176px;
+    }
+}
+@media (max-width:700px) {
+    footer .info, footer .docs {
+        flex-direction: column;
+        row-gap: 23px;
+    }
+}
+@media (max-width:430px) {
+    .button_top {
+        width: 64px;
+        height: 64px;
+        bottom: 20px;
+    }
+    .button_top a {
+        line-height: 80px;
+    }
+    header .basket {
+        display: none;
+    }
+    main .card {
+        flex: 0 1 100%;
+    }
+}
+@media (max-width:380px) {
+    footer .apps {
+        column-gap: 20px;
+    }
+}
