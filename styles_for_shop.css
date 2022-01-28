@@ -1,0 +1,24 @@
+/* --------------------------- BANNER --------------------------- */
+.banner {
+    height: 364px;
+    background-image: url("img/pushkin/background1.png");
+    background-size: cover;
+}
+.banner .wrap {
+}
+.shop_board {
+    width: 400px;
+    height: 204px;
+    padding: 38px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.shop_board h1 {
+    margin: 0 auto;
+    font-size: 2.25rem;
+    font-weight: normal;
+}
+.shop_info {
+    display: flex;
+    justify-content: space-between;
+}
