@@ -43,15 +43,15 @@ header .wrap {
     display: flex;
     justify-content: space-between;
 }
-header .logo {
+.logo {
     margin: 29px 0;
     align-self: center;
 }
-header .enter {
+.enter {
     display: flex;
     line-height: 0;
 }
-header .enter button {
+.enter button {
     align-self: center;
     width: 78px;
     height: 40px;
@@ -62,15 +62,15 @@ header .enter button {
     background-color: white;
     font-weight: 600;
 }
-header .enter button:hover {
+.enter button:hover {
     background-color: #f0f0f0;
 }
-header .enter a {
+.enter a {
     align-self: center;
     padding: 25px 10px;
     transition: 200ms;
 }
-header .enter a:hover {
+.enter a:hover {
     transform: scale(1.1);
 }
 
@@ -80,17 +80,17 @@ header .enter a:hover {
 main {
     padding: 50px 0 80px;
 }
-main .search {
+.search {
     width: 100%;
     border: none;
     border-bottom: 1px solid #e0e0e0;
     font-size: 1rem;
     color: #626262;
 }
-main .search::placeholder {
+.search::placeholder {
     color: #e0e0e0;
 }
-main .search:focus {
+.search:focus {
     outline: 0;
 }
 main h1 {
@@ -98,37 +98,37 @@ main h1 {
     font-size: 1.375rem;
     font-weight: normal;
 }
-main .cards {
+.cards {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     column-gap: 2%;
     row-gap: 16px;
 }
-main .card {
+.card {
     flex: 0 1 32%;
     transition: 200ms;
 }
-main .card img {
+.card img {
     width: 100%;
 }
-main .card:hover {
+.card:hover {
     transform: scale(1.02);
     background-color: #f0f0f0;
 }
-main .card a {
+.card a {
     text-decoration: none;
 }
-main .card h3 {
+.card h3 {
     font-size: 1rem;
     font-weight: normal;
     color: #000;
 }
-main .card .menu {
+.card .menu {
     font-size: 0.875rem;
     color: #626262;
 }
-main .card .time {
+.card .time {
     margin-bottom: 20px;
     font-size: 0.8125rem;
     color: #000;
@@ -141,7 +141,7 @@ main .card .time {
 footer {
     background-color: #262626;
 }
-footer .white_logo {
+.white_logo {
     margin: 56px 0 40px;
 }
 footer hr {
@@ -151,25 +151,29 @@ footer a {
     text-decoration: none;
     color: #fff;
 }
-footer .column1, footer .column2, footer .column3 {
+.column1, .column2, .column3 {
     display: flex;
     flex-direction: column;
     flex: 0 1 32%;
 }
-footer .info {
+.info {
     padding: 32px 0 48px;
 }
-footer .info, footer .docs {
+.info, .docs {
     display: flex;
     justify-content: space-between;
     column-gap: 2%;
 }
-footer .info .change_lang {
+.info .change_lang {
     display: flex;
     align-items: center;
     margin-bottom: 33px;
 }
-footer .info select {
+.info .change_lang > img {
+    padding-left: 14px;
+    z-index: 1;
+}
+.info select {
     width: 100%;
     max-width: 227px;
     height: 40px;
@@ -180,41 +184,37 @@ footer .info select {
     font-size: 0.8125rem;
     color: #fff;
 }
-footer .info .change_lang > img {
-    padding-left: 14px;
-    z-index: 1;
-}
-footer .info select:focus {
+.info select:focus {
     outline: none;
 }
-footer .info .column1 > a {
+.info .column1 > a {
     margin-bottom: 17px;
 } 
-footer .info .column1 > a::before {
+.info .column1 > a::before {
     content: "#";
     color: #49a144;
 }
-footer .info .social a {
+.info .social a {
     margin-right: 6px;
 }
-footer .info .column2, footer .info .column3 {
+.info .column2, .info .column3 {
     row-gap: 23px;
     font-size: 0.8125rem;
 }
-footer .apps {
+.apps {
     display: flex;
     justify-content: center;
     column-gap: 40px;
     padding: 40px 0;
 }
-footer .docs {
+.docs {
     padding: 40px 0;
     font-size: 0.6875rem;
 }
-footer .touch {
+.touch {
     transition: 200ms;
 }
-footer .touch:hover {
+.touch:hover {
     transform: scale(1.02);
 }
 
