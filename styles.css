@@ -126,6 +126,7 @@ h3 {
     color: #000;
 }
 .type {
+    margin: 0;
     font-size: 0.875rem;
     color: #626262;
 }

@@ -5,8 +5,14 @@
     background-size: cover;
 }
 .banner .wrap {
+    display: flex;
+    align-items: center;
+    height: 364px;
 }
 .shop_board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 400px;
     height: 204px;
     padding: 38px;
@@ -21,4 +27,31 @@
 .shop_info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.black_time {
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 16px;
+    background-color: #000;
+    font-size: 0.8125rem;
+    color: #fff;
+}
+
+
+/* --------------------------- MENU_NAV --------------------------- */
+.menu_nav {
+    border-bottom: 1px solid #e0e0e0;
+}
+.menu_nav .wrap{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    height: 80px;
+}
+.menu_nav .wrap a {
+    color: #626262;
+}
+.menu_nav .wrap .active_menu_nav {
+    color: #327430;
 }
