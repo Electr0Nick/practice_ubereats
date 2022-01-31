@@ -18,6 +18,7 @@
     padding: 38px;
     border-radius: 2px;
     background-color: #fff;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.1);
 }
 .shop_board h1 {
     margin: 0 auto;
@@ -54,4 +55,139 @@
 }
 .menu_nav .wrap .active_menu_nav {
     color: #327430;
+}
+
+
+/* --------------------------- MAIN --------------------------- */
+.line_for_mobile {
+    display: none;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #979797;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 49px;
+    margin: 32px 0 80px;
+}
+.dish_card {
+    flex: 0 1 49%;
+    height: 160px;
+    transition: 200ms;
+}
+.dish_card:hover {
+    transform: scale(1.02);
+    background-color: #f0f0f0;
+}
+.dish_card a {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ececec;
+}
+.dish_card a img {
+    height: 160px;
+}
+.dish {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 16px 16px;
+}
+.price {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #000;
+}
+
+
+/* --------------------------- MEDIA --------------------------- */
+@media (max-width:860px) {
+    .banner {
+        background-image: url("img/pushkin/background2.png");
+    }
+    .menu {
+        display: block;
+    }
+    .dish_card {
+        margin-bottom: 32px;
+    }
+}
+@media (max-width:630px) {
+    .menu_nav {
+        display: none;
+    }
+    .menu {
+        row-gap: 16px;
+    }
+    .dish_card {
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    .dish_card a img {
+        height: 120px;
+    }
+}
+@media (max-width:430px) {
+    .banner {
+        height: 255px;
+        margin-bottom: 112px;
+        background-image: url("img/pushkin/background3.png");
+    }
+    .banner .wrap {
+        align-items: flex-end;
+        justify-content: center;
+        height: 255px;
+    }
+    .shop_board {
+        width: 100%;
+        height: 180px;
+        margin-bottom: -56px;
+        padding: 24px;
+    }
+    .shop_board h1 {
+        font-size: 2rem;
+    }
+    .shop_info {
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    .menu_header {
+        text-align: center;
+    }
+    .line_for_mobile {
+        display: block;
+    }
+    .dish_card {
+        height: 102px;
+        margin-bottom: 16px;
+    }
+    .dish_card a {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: #fff;
+    }
+    .dish_card a img {
+        height: 102px;
+    }
+    .dish {
+        overflow: hidden;
+    }
+    .dish_info h3 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 0.875rem;
+    }
+    .dish_info .type {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width:360px) {
+    .shop_board h1 {
+        font-size: 1.5rem;
+    }
 }

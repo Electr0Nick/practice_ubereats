@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
 body {
     margin: 0;
     font-family: Roboto, Arial, sans-serif;
@@ -31,7 +34,6 @@ body {
     line-height: 96px;
     text-align: center;
 }
-
 
 
 
@@ -78,11 +80,9 @@ header .wrap {
 
 
 /* --------------------------- MAIN --------------------------- */
-main {
-    padding: 50px 0 80px;
-}
 .search {
     width: 100%;
+    margin-top: 56px;
     border: none;
     border-bottom: 1px solid #e0e0e0;
     font-size: 1rem;
@@ -95,7 +95,7 @@ main {
     outline: 0;
 }
 main h2 {
-    margin: 50px 0 16px;
+    margin: 56px 0 16px;
     font-size: 1.375rem;
     font-weight: normal;
 }
@@ -105,6 +105,7 @@ main h2 {
     justify-content: space-between;
     column-gap: 2%;
     row-gap: 16px;
+    margin-bottom: 80px;
 }
 .card {
     flex: 0 1 32%;
@@ -121,6 +122,7 @@ a {
     text-decoration: none;
 }
 h3 {
+    margin: 16px 0 12px;
     font-size: 1rem;
     font-weight: normal;
     color: #000;
@@ -135,7 +137,6 @@ h3 {
     font-size: 0.8125rem;
     color: #000;
 }
-
 
 
 
@@ -238,6 +239,9 @@ footer a {
     }
 }
 @media (max-width:430px) {
+    .wrap {
+        padding: 0 5px;
+    }
     .button_top {
         width: 64px;
         height: 64px;
