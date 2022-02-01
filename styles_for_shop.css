@@ -52,7 +52,7 @@
 .menu_nav .wrap a {
     height: 100%;
     padding: 28px;
-    transition: 200ms;
+    transition: 300ms;
     color: #626262;
 }
 .menu_nav .wrap a:not(.active_menu_nav):hover {
@@ -116,14 +116,14 @@
     .menu {
         display: block;
     }
+    .menu_nav {
+        display: none;
+    }
     .dish_card {
         margin-bottom: 32px;
     }
 }
 @media (max-width:630px) {
-    .menu_nav {
-        display: none;
-    }
     .menu {
         row-gap: 16px;
     }
