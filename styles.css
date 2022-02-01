@@ -22,10 +22,11 @@ body {
     bottom: 24px;
     border-radius: 2px;
     transition: 200ms;
-    background-color: #59bd5a;
+    background-color: rgba(89, 189, 90, 0.4);
 }
 .button_top:hover {
     transform: scale(1.05);
+    background-color: #59bd5a;
 }
 .button_top a {
     display: block;
@@ -111,12 +112,19 @@ main h2 {
     flex: 0 1 32%;
     transition: 200ms;
 }
-.card img {
-    width: 100%;
-}
 .card:hover {
     transform: scale(1.02);
     background-color: #f0f0f0;
+}
+.card_img {
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    transition: 300ms;
+}
+.card img:hover {
+    transform: scale(1.05);
 }
 a {
     text-decoration: none;
@@ -170,25 +178,32 @@ footer a {
 .info .change_lang {
     display: flex;
     align-items: center;
-    margin-bottom: 33px;
+    margin-bottom: 20px;
 }
+
 .info .change_lang > img {
-    padding-left: 14px;
-    z-index: 1;
+    padding: 10px;
 }
 .info select {
     width: 100%;
-    max-width: 227px;
+    max-width: 80px;
     height: 40px;
-    margin-left: -30px;
-    padding-left: 44px;
     border: none;
-    background-color: #3b3b3b;
+    background-color: #262626;
+    transition: 200ms;
     font-size: 0.8125rem;
     color: #fff;
 }
 .info select:focus {
     outline: none;
+}
+.info .change_lang {
+    max-width: 120px;
+    transition: 200ms;
+}
+.change_lang:hover select, .change_lang:hover {
+    background: #3b3b3b;
+    cursor: pointer;
 }
 .info .column1 > a {
     margin-bottom: 17px;
@@ -197,8 +212,15 @@ footer a {
     content: "#";
     color: #49a144;
 }
-.info .social a {
-    margin-right: 6px;
+.info .social {
+    display: flex;
+}
+.info .column1 .social a {
+    margin-right: 8px;
+    transition: 200ms;
+}
+.info .column1 .social a:hover {
+    transform: translateY(-2px);
 }
 .info .column2, .info .column3 {
     row-gap: 23px;
@@ -209,6 +231,12 @@ footer a {
     justify-content: center;
     column-gap: 40px;
     padding: 40px 0;
+}
+.apps a {
+    transition: 200ms;
+}
+.apps a:hover {
+    transform: translateY(-2px);
 }
 .docs {
     padding: 40px 0;
