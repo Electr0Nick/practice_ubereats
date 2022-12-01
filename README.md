@@ -1,5 +1,8 @@
 # practice_ubereats
 
+![скрин](https://github.com/Electr0Nick/practice_ubereats/blob/main/img/Screenshot.PNG?raw=true)
+
+
 ### Описание:
 
 Один из самых первых написаных мною лендингов.
